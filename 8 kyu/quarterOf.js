@@ -8,7 +8,7 @@ month 6 (June), is part of the second quarter;
 and month 11 (November), is part of the fourth quarter.
 */
 
-const quarterOf = (month) => {
+quarterOf = (month) => {
   switch(month) {
       case 1:
       case 2:

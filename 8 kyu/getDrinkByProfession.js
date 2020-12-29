@@ -19,3 +19,32 @@ Make sure you cover the cases where certain words
 do not show up with correct capitalization.
 For example, the input "pOLitiCIaN" should still return "Your tax dollars".
 */
+
+getDrinkByProfession = (param) => {
+    paramLower = param.toLowerCase();
+    switch(paramLower) {
+        case "jabroni":
+            return "Patron Tequila"
+            break;
+        case "school counselor":
+            return "Anything with Alcohol";
+            break;
+        case "programmer":
+            return "Hipster Craft Beer";
+            break;
+        case "bike gang member":
+            return "Moonshine";
+            break;
+        case "politician":
+            return "Your tax dollars";
+            break;
+        case "rapper":
+            return "Cristal";
+            break;
+        default:
+            return "Beer";
+            break;
+    }
+}
+
+console.log(getDrinkByProfession("pug")); //Beer
