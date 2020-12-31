@@ -12,13 +12,12 @@ You can assume, for the purpose of this kata, that the supplied array will not b
 
 */
 
-findSmallestInt = (args) => {
-    for (i = 0; i < args.length; i++) {
-        if (Math.min(args[i]) {
-            return args[i];
-        }
-        return args[i]
+findSmallestInt = (arr) => {
+    for (i = 0; i < arr.length; i++) {
+        if (arr[i] === Math.min(arr)) {
+            return arr[i];
     }
+        }
 }
 
 console.log(findSmallestInt([2,34,4]));
