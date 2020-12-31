@@ -8,6 +8,12 @@ repeatStr(6, "I") // "IIIIII"
 repeatStr(5, "Hello") // "HelloHelloHelloHelloHello"
 */
 
-repeatStr = (src, count) => src.repeat(count);
+repeatStr = (count, src) => {
+    let str = src;
+    for (i = 1; i < count; i++) {
+        str += src;
+    }
+    return str;
+};
 
-console.log(repeatStr(0))
+console.log(repeatStr(3, "Hello"))
