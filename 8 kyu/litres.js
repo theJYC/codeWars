@@ -3,9 +3,12 @@
 /*
 Nathan loves cycling.
 
-Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.
+Because Nathan knows it is important to stay hydrated,
+he drinks 0.5 litres of water per hour of cycling.
 
-You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.
+You get given the time in hours
+and you need to return the number of litres Nathan will drink,
+rounded to the smallest value.
 
 For example:
 
@@ -16,13 +19,3 @@ time = 6.7---> litres = 3
 time = 11.8--> litres = 5
 */
 
-number = 12345678
-
-loop = (no) => {
-    no.toString();
-    for (i = 0; i < 7; i++) {
-        console.log(no[i]);
-    }
-}
-
-loop(number)
