@@ -12,12 +12,17 @@ You can assume, for the purpose of this kata, that the supplied array will not b
 
 */
 
+
+//I: array [] of integers
+//O: smallest integer within the array
+//sort the array using array.sort()
+//pick the zeroth index of the array and return it
+
+
+
 findSmallestInt = (args) => {
-    for (i = 0; i < args.length; i++) {
-      if (args[i] > args[i+1]) {
-        console.log(args[i]);
-      }
-    }
+    let sorted = args.sort((a, b) => a - b);
+    return sorted[0];
 }
 
-console.log(findSmallestInt([2,34,4]));
+console.log(findSmallestInt([2,-34,4]));
