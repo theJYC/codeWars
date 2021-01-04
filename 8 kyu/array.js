@@ -15,10 +15,10 @@ arr(5) // => [0,1,2,3,4]
 
 arr = (int) => {
     array = [];
-    for (i = 0; i <= int; i++) {
+    for (i = 0; i < int; i++) {
         array += i;
     }
     return array.split(""); //if the array is a negative number, print (0)
 }
 
-console.log(arr(98))
+console.log(arr(5))
