@@ -17,8 +17,25 @@ there are 10 matches in the championship
 0 <= y <= 4
 */
 
-runningSum = nums => {
-    return nums.map(x => x + (x -1))
+points = games => {
+    score = 0;
+
+    for (i = 0; i < 10; i++) {
+        if (i[0] > i[2]) {
+            score += 3;
+            console.log("win")
+        }
+        else if (i[0] < i[2]) {
+            score += 0;
+            console.log("loss")
+        }
+        else {
+            score += 1;
+            console.log(i[2])
+        }
+    }
+    return score;
 }
 
-console.log(runningSum([3,1,2,10,1]));
+console.log(points(['1:0','2:0','3:0','4:0','2:1','3:1','4:1','3:2','4:2','4:3']));
+
