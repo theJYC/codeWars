@@ -1,3 +1,4 @@
+
 //squareDigits.js
 
 /*
@@ -18,9 +19,9 @@ squareDigits = num => {
     //loop through and square each index
     for (i = 0; i < num.length; i++) {
         //square each digits of the array
-        (parseInt(i)**2).toString();
+        parseInt(newNum[i]) ** 2
     }
-    return num;
+    return newNum;
 }
 
 console.log(squareDigits(9119));
