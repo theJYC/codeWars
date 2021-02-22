@@ -37,11 +37,12 @@ Good luck!
 function Ship(draft, crew) {
     this.draft = draft;
     this.crew = crew;
+
+    this.isWorthIt = () => {
+        return draft - 1.5 * crew > 20
+    }
 }
 
-Ship.prototype.isWorthIt = function() {
-        ((this.crew * 1.5) + this.draft) > 20 ? true : false;
-    }
 const titanic = new Ship(15,10);
 console.log(titanic.isWorthIt())
 
